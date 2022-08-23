@@ -1,20 +1,29 @@
-Customer_ItemDAO project shows  how to apply Obeject Oriented Programming in Java regarding to CRUD operations in a relational Database
+# Customer_ItemDAO 
 
-###Languges: Java, SQL
-###Tools & framework:
+## Applying Obeject Oriented Programming in Java regarding to CRUD operations in a relational Database
+
+**Languges:** Java, SQL
+
+**Tools & framework:**
 JDBC API,IntelliJ Idea/Spring Tool Suite, MariaDB
 
-##Create Database Tables:
+**Create Abstract class where control connection and close method**
+
+**Create DAO interface where includes all of SQL queries**
+
+**Create Database Tables:**
 Customer - id(int), email(varchar2), fname(varchar2), lname(varchar2).
 
 Item - id(int), name(varchar2), price(Number(4,2)).
 
-##Create models for each table.
+**Create models for each table.(extends abstract connection class and implements DAO interface**
+
 Customer.java
 
 Item.java
 
-##Create DAOs with the following methods:
+**Create DAOs with the following methods:**
+
 CustomerDAO:
 
 getCustomerById(int id) - Returns the customer object for the given id.
@@ -31,6 +40,6 @@ addItem(Item i) - Adds an item with given information.
 
 removeItemById(int id) - Removes an item with the given id.
 
-Notes
+**Notes:**
 This is for learning purpose only. Feel free to use and test it, but please do not submit the codes as your own work.
 There is no interaction between Customer and Item at this stage. I may or may not implement more features in this program.
